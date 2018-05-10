@@ -40,3 +40,12 @@ class CopyReferenceCommand(sublime_plugin.TextCommand):
             sublime.status_message("Copied relative path with line")
     def is_enabled(self):
         return bool(self.view.file_name() and len(self.view.file_name()) > 0)
+
+class CopyFilenameCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        filepath = self.view.file_name();
+        filename = filepath[filepath.rfind('\\')+1:]
+
+        if len(filename) > 0:
+            sublime.set_clipboard(filename + ':' + getLines(self))
+            sublime.status_message("Copied filename with line")

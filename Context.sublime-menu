@@ -6,5 +6,9 @@
     {
         "caption": "Copy Reference",
         "command": "copy_reference"
+    },
+    {
+        "caption": "Copy Filename",
+        "command": "copy_filename"
     }
 ]
