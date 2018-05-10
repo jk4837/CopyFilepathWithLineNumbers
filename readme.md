@@ -13,21 +13,21 @@ Tested with
 Select one or more line(s), right-click and choose "Copy Filepath With Line Numbers" to copy filepath.
 Your filepath will be copied to clipboard in the following form:
 ```
-/home/readme.md:3
+/home/readme.md:3:5
 /home/readme.md:3-10
 ```
 
-Select one or more line(s), right-click and choose "Copy Reference" to copy relative filepath with lines.
+Select one or more line(s), right-click and choose "Copy Reference" to copy relative filepath with lines and colume.
 Your filepath will be copied to clipboard in the following form:
 ```
-subfolder/readme.md:3
+subfolder/readme.md:3:5
 subfolder/readme.md:3-10
 ```
 
-Select one or more line(s), right-click and choose "Copy Filename" to copy filename with lines.
+Select one or more line(s), right-click and choose "Copy Filename" to copy filename with lines and colume.
 Your filepath will be copied to clipboard in the following form:
 ```
-readme.md:3
+readme.md:3:5
 readme.md:3-10
 ```
 

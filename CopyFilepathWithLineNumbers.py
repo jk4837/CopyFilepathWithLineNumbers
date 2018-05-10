@@ -12,6 +12,8 @@ def getLines(self):
     if rowStart != rowEnd:
         #multiple selection
         lines += "-" + (str) (rowEnd + 1)
+    else:
+        lines += ":" + (str) (colEnd)
 
     return lines
 
